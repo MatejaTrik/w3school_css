@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS animation-fill-mode, animation-direction</title>
+	<script src="https://kit.fontawesome.com/8e9bc15ffe.js" crossorigin="anonymous"></script>
+	<style>
+		div.najveci{margin-top: 40px;border: 5px solid black;height: 1300px }
+		div.krupni{border: 4px solid black;height: 265px;background-color: red;}
+		div.datum{border: 2px dashed black;margin: 5px;text-align: center; background-color: tomato;color: white;}
+		div.link{border:2px dashed black;margin: 5px;background-color: tomato;color: white;}
+		a.a22 {color: white;}
+		body {background-image: url(trees.png);background-repeat: repeat;}
+		h1.glavni {background: black; color: white; text-align: center;margin-top: 0px;border-image: trees.png;}
+		h2.manji {background: black; color: white; text-align: left; margin-top: 50px;}
+
+		div.div1 {width: 100px;
+		margin: 30px;
+		height: 100px;
+		background: red;
+		position: relative;
+		animation: mojpokret 3s;
+		animation-fill-mode: forwards;}
+
+		@keyframes mojpokret {
+		from {top: 0px;}
+		to {top: 200px; background-color: blue;}}
+
+		div.div2 {margin: 30px;
+		width: 100px;
+		height: 100px;
+		background: red;
+		position: relative;
+		animation: mojpokret1 3s;
+		animation-delay: 2s;
+		animation-fill-mode: backwards;}
+
+		@keyframes mojpokret1 {
+		from {top: 0px; background-color: yellow;}
+		to {top: 200px;}}	
+
+		div.div3 {margin: 30px;
+		width: 100px;
+		height: 100px;
+		background: red;
+		position: relative;
+		animation: mojpokret2 3s;
+		animation-delay: 2s;
+		animation-fill-mode: both;}
+
+		@keyframes mojpokret2 {
+		from {top: 0px; background-color: yellow;}
+		to {top: 200px; background-color: green;}}	
+
+
+
+
+
+		div.divinia {margin:30px;
+		width: 100px;
+		height: 100px;
+		background: red;
+		position: relative;
+		animation: mojapokretina 1s;
+		animation-iteration-count: infinite;}
+
+
+		@keyframes mojapokretina {
+		from{left: 30px;}
+		to{left: 430px;}
+
+
+
+
+	</style>
+
+</head>
+<body>
+
+
+	<!-- KOMENTAR_____________________________________________________________________________________KOMENTAR -->
+
+	<div class="krupni">
+
+		<div class="datum">
+				<h2>Datum:28.11.2019</h2>
+			</div>
+				<br>
+			<div class="link">
+				<h3>
+					Od lekcije:<a class="a22" href="https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp" target="_blank">CSS animation-fill-mode</a>
+				</h3>
+			</div>
+				<br>
+			<div class="link">
+				<h3>
+					Do lekcije:<a class="a22" href="https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp" target="_blank">CSS animation-iteration-count</a>
+				</h3>
+		</div>
+
+	</div>
+
+
+<!-- KOMENTAR_____________________________________________________________________________________KOMENTAR -->
+
+	<div class="najveci">
+
+		<h1 class="glavni">CSS animation-fill-mode</h1>
+
+			<h2 class="manji">CSS animation-fill-mode Property:</h2>
+
+				<p>animation-fill-mode: forwards:</p>
+				<div class="div1"></div>
+
+				<br><br><br><br><br><br><br><br>
+
+				<p>animation-fill-mode: backward:</p>
+				<div class="div2"></div>
+
+				<br><br><br><br><br><br>
+
+				<p>animation-fill-mode: both:</p>
+				<div class="div3"></div>
+
+				<br><br><br><br><br><br>				
+
+					
+
+	</div>
+
+
+<!-- KOMENTAR_____________________________________________________________________________________KOMENTAR -->
+
+	<div class="najveci">
+		
+		<h1 class="glavni">CSS animation-iteration-count</h1>
+			
+			<h2 class="manji">CSS animation-iteration-count property:</h2>	
+
+				<p>Animacija</p>
+					<div class="divinia"></div>
+
+
+	</div>
