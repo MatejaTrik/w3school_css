@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS background-blend-mode, background-clip</title>
+	<script src="https://kit.fontawesome.com/8e9bc15ffe.js" crossorigin="anonymous"></script>
+	<style>
+		div.najveci{margin-top: 40px;border: 5px solid black;height: 4700px }
+		div.krupni{border: 4px solid black;height: 265px;background-color: red;}
+		div.datum{border: 2px dashed black;margin: 5px;text-align: center; background-color: tomato;color: white;}
+		div.link{border:2px dashed black;margin: 5px;background-color: tomato;color: white;}
+		a.a22 {color: white;}
+		body {background-image: url(trees.png);background-repeat: repeat;}
+		h1.glavni {background: black; color: white; text-align: center;margin-top: 0px;border-image:}
+		h2.manji {background: black; color: white; text-align: left; margin-top: 50px;}
+
+		.a1 {margin: 30px;
+		width: 400px;
+		height: 400px;
+		background-repeat: no-repeat, repeat;
+		background-image: url("img_tree.gif"), url("paper.gif");
+		background-blend-mode: multiply;}
+
+		.a2 {margin: 30px;
+		width: 400px;
+		height: 400px;
+		background-repeat: no-repeat, repeat;
+		background-image: url("img_tree.gif"), url("paper.gif");
+		background-blend-mode: screen;}
+
+		.a3 {margin: 30px;
+		width: 400px;
+		height: 400px;
+		background-repeat: no-repeat, repeat;
+		background-image: url("img_tree.gif"), url("paper.gif");
+		background-blend-mode: overlay;}
+
+		.a4 {margin: 30px;
+		width: 400px;
+		height: 400px;
+		background-repeat: no-repeat, repeat;
+		background-image: url("img_tree.gif"), url("paper.gif");
+		background-blend-mode: darken;}
+
+		.a5 {margin: 30px;
+		width: 400px;
+		height: 400px;
+		background-repeat: no-repeat, repeat;
+		background-image: url("img_tree.gif"), url("paper.gif");
+		background-blend-mode: color-dodge;}
+
+		.a6 {margin: 30px;
+		width: 400px;
+		height: 400px;
+		background-repeat: no-repeat, repeat;
+		background-image: url("img_tree.gif"), url("paper.gif");
+		background-blend-mode: saturation;}
+
+		.a7 {margin: 30px;
+		width: 400px;
+		height: 400px;
+		background-repeat: no-repeat, repeat;
+		background-image: url("img_tree.gif"), url("paper.gif");
+		background-blend-mode: color;}
+
+		.a8 {margin: 30px;
+		width: 400px;
+		height: 400px;
+		background-repeat: no-repeat, repeat;
+		background-image: url("img_tree.gif"), url("paper.gif");
+		background-blend-mode: luminosity;}
+
+		.a9 {margin: 30px;
+		width: 400px;
+		height: 400px;
+		background-repeat: no-repeat, repeat;
+		background-image: url("img_tree.gif"), url("paper.gif");
+		background-blend-mode: normal;}
+
+		.Pozadina ide do kraja conent boxprimer1 {margin:10px;
+		border: 10px dotted black;
+		padding: 15px;
+		background: lightblue;
+		background-clip: border-box;}
+
+		.Pozadina ide do kraja conent boxprimer2 {margin:10px;
+		border: 10px dotted black;
+		padding: 15px;
+		background: lightblue;
+		background-clip: padding-box;}
+
+		.Pozadina ide do kraja conent boxprimer3 {margin:10px;
+		border: 10px dotted black;
+		padding: 15px;
+		background: lightblue;
+		background-clip: content-box;}
+
+	</style>
+
+</head>
+<body>
+
+
+	<!-- KOMENTAR_____________________________________________________________________________________KOMENTAR -->
+
+	<div class="krupni">
+
+		<div class="datum">
+				<h2>Datum:04.12.2019</h2>
+			</div>
+				<br>
+			<div class="link">
+				<h3>
+					Od lekcije:<a class="a22" href="https://www.w3schools.com/cssref/css3_pr_animation-name.asp" target="_blank">CSS background-blend-mode</a>
+				</h3>
+			</div>
+				<br>
+			<div class="link">
+				<h3>
+					Do lekcije:<a class="a22" href="https://www.w3schools.com/cssref/css3_pr_animation-play-state.asp" target="_blank">CSS background-clip</a>
+				</h3>
+		</div>
+
+	</div>
+
+
+<!-- KOMENTAR_____________________________________________________________________________________KOMENTAR -->
+
+	<div class="najveci">
+
+		<h1 class="glavni">CSS background-blend-mode</h1>
+
+			<h2 class="manji">CSS background-blend-mode Property:</h2>
+
+			<p>Multiply</p>
+			<div class="a1"></div>
+			<br>
+
+			<p>screen</p>
+			<div class="a2"></div>
+			<br>
+
+			<p>overlay</p>
+			<div class="a3"></div>
+			<br>
+
+			<p>darken</p>
+			<div class="a4"></div>
+			<br>
+
+			<p>color-dodge</p>
+			<div class="a5"></div>
+			<br>
+
+			<p>saturation</p>
+			<div class="a6"></div>
+			<br>
+
+			<p>color</p>
+			<div class="a7"></div>
+			<br>
+
+			<p>luminosity</p>
+			<div class="a8"></div>
+			<br>
+
+			<p>normal</p>
+			<div class="a9"></div>
+			<br>
+
+	
+
+
+
+
+
+	</div>
+
+
+<!-- KOMENTAR_____________________________________________________________________________________KOMENTAR -->
+
+	<div class="najveci">
+		
+		<h1 class="glavni">CSS background-clip</h1>
+			
+			<h2 class="manji">CSS background-clip property:</h2>	
+
+
+		<p>background-clip: border-box (this is default):</p>
+		<div class="primer1">
+		 <p>pozadine ide iza bordera</p>
+		</div>
+
+		<p>background-clip: padding-box:</p>
+		<div class="primer2">
+		 <p>pozadina ide do unustrasnjeg kraja border-box.</p>
+		</div>
+
+		<p>background-clip: content-box:</p>
+		<div class="primer3">
+		 <p>Pozadina ide do kraja conent box.</p>
+		</div>
+
+
+	</div>
